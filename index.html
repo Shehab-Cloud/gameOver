@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <!-- Logo tab browser -->
+    <link rel="icon" href="./image/optimized_large_thumb_stage.jpg">
+    <!-- Logo tab browser -->
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Nerko+One&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Font Awesome -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Bootstrap -->
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Style -->
+</head>
+<body>
+<section class="allGames">
+    <header>
+            <img src="./image/wraper.png" class="w-100 " alt="">
+    </header>
+</section>
+
+<nav class="navbar navbar-expand-lg position-sticky top-0  me ">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white head" href="#">
+            <img width="60" height="60" src="./image/vecteezy_free-download-gaming-mascot-logo-png-realistic-photo-ai_27445388.png" class="rounded rounded-5" alt=""> Game Reviews
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-me" id="navbarNav">
+            <ul class="navbar-nav list">
+                <li class="nav-item  ">
+                    <a  role="button" class="nav-link text-white active" aria-current="page" data-category="mmorpg">MMORPG</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button" class="nav-link text-white"   data-category="shooter">Shooter</a>
+                </li>
+                <li class="nav-item">
+                    <a  role="button" class="nav-link text-white"   data-category="sailing">Sailing</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button"   class="nav-link text-white"  data-category="permadeath">Permadeath</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button"  class="nav-link text-white"  data-category="superhero" >Superhero</a>
+                </li>
+                <li class="nav-item">
+                    <a role="button" class="nav-link text-white"data-category="pixel" >Pixel</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="gmmes ">
+    <div class="container">
+        <div class="row g-4" id="card">
+
+        </div>
+    </div >
+
+
+</div>
+
+<div id="detalisGames" class="details-Games position-fixed start-0 top-0 w-100 h-100 d-none " >
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-6">
+                <div class="left">
+                    <h2 class="text-white">Details Game</h2>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="right d-flex justify-content-end">
+                    <span id="exite" class="text-danger "><i id="close-page" class="fa-solid fa-x"></i></span>
+                </div>
+            </div>
+        </div>
+        <div  id="information"  class="row">
+
+        </div>
+    </div>
+</div>
+
+<div class="wait d-none ">
+    <span class="loader"></span>
+</div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+
+</body>
+</html>

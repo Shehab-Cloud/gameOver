@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Nerko One", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #272B30;
+}
+
+:root {
+    --main-font: "Italianno", cursive;
+}
+
+header img{
+    object-fit: cover;
+    height: 200px;
+    position: relative;
+}
+
+.active {
+    color: rgb(46, 42, 50) !important;
+    border: 1px solid;
+    border-radius: 15px;
+    background-image: url(../image/wraper.png);
+
+}
+
+.me {
+    background-color: #3A497B;
+    border-radius: 10px;
+    background-image: url(../image/wraper.png);
+    width: 70%;
+    margin: -50px auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0px 0px 23px 3px rgba(0, 0, 0, 0.6);
+
+}
+.me .head {
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+.me .nav-me {
+    justify-content: end !important;
+
+}
+
+.me .nav-me  .list li a{
+    font-size: 20px !important;
+    letter-spacing: 1px;
+    margin-right: 8px;
+    transition:0.5s ;
+}
+.me .nav-me  .list li a:hover{
+    color: rgb(23, 23, 123) !important;
+    
+    
+}
+.gmmes{
+    margin-top: 100px;
+}
+.item{
+    background-color: transparent;
+    cursor: pointer;
+   filter: grayscale(0.5);
+   transition: 0.5s;
+   padding: 10px 10px 0 10px;
+}
+.item:hover{
+   filter: grayscale(0);
+   transform: scale(1.1);
+}
+.gmmes .text-card h3{
+    font-size: 17px;
+    color: white;
+}
+.gmmes .text-card{
+    padding: 10px;
+    margin-top: 7px;
+    align-items: center;
+}
+.gmmes .text-card span{
+    font-size: 16px;
+    padding: 3px 5px;
+   
+}
+.gmmes p{
+    color: #696969;
+}
+.gmmes .fot{
+    color: white;
+}
+.gmmes .fot span{
+    background-color: #32383E;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.details-Games{
+    z-index: 1000;
+    padding-top: 50px;
+    background-color: #27282A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.details-Games .right span{
+    cursor: pointer;
+}
+.details-Games .right-data .info p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    
+}
+.details-Games .right-data .info span{
+    margin-left: 10px;
+    background-color: darkred;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.details-Games .right-data > p{
+    line-height: 27px;
+    
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: #FFF #FFF transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent #FF3D00 #FF3D00;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: #FFF #FFF transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
+
+  .wait{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3b3a392d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
