@@ -120,7 +120,7 @@ async function getapiID(id) {
                         <p class=" gamePlatform">Platform: <span >${view.platform}</span></p>
                         <p class="gameStatus">Status: <span class="">${view.status}</span></p>
                     </div>
-                    <p class="w-100  gamedDescription">${view.description}</p>
+                    <p class="w-100  gamedDescription">${view.description.split(" " ,100).join(" ")}</p>
                     <a href=${view.game_url} class="btn btn-outline-warning gameLink" target="_blank">Show Game</a>
                 </div>
             </div>
